@@ -22,5 +22,10 @@ namespace ConsolePractice
         {
             _salary = salary;
         }
+        public string GetFullName()
+        {
+            string fullName = $"{FirstName} {LastName}";
+            return fullName;
+        }
     }
 }

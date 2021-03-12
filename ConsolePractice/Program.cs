@@ -35,6 +35,17 @@ namespace ConsolePractice
 
             Person person = new Person();
             person.GetSalary();
+
+            Console.WriteLine("Enter First Name: ");
+            person.FirstName = Console.ReadLine();
+            Console.WriteLine("Enter Last Name: ");
+            person.LastName = Console.ReadLine();
+
+            string wholeName = person.GetFullName();
+            Console.WriteLine($"Your full name is: {wholeName}");
+
+            Console.ReadLine();
+
         }
     }
 }
